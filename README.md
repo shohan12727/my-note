@@ -168,3 +168,48 @@ body{
 } 
 ```
 
+# Relative absolute 
+
+```html 
+<div class="holiday_img">
+      <img id="discount" src="images/Group 44.png" alt="">
+      <img id="box" src="images/Group 75.png" alt="">
+      <img id="ractangle" src="images/Rectangle 2.png" alt="">
+    </div>
+```
+
+```css
+.holiday_img {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+#rectangle {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+#box {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  z-index: 2;
+  height: 200px; 
+}
+
+
+#discount {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  z-index: 3;
+  height: 100px; 
+}
+```
