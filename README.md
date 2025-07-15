@@ -213,3 +213,44 @@ body{
   height: 100px; 
 }
 ```
+
+# Two column flex and use media query with flex direction 
+
+```html
+<body>
+  <div class="container">
+    <div>
+   <img src="tiger.png" alt="">
+    </div>
+    <div>
+ <img src="vegetable.png" alt="">
+    </div>
+  </div>
+</body>
+```
+
+```css
+ <style>
+    body {
+      max-width: 1280px;
+      margin: 1 auto;
+    }
+    .container{
+      display: flex;
+    }
+    .container div{
+      width: 50%;
+    }
+    .container img {
+      width: 100%;
+    }
+    @media  screen and (max-width:576px) {
+        .container {
+          flex-direction: column-reverse;
+        }
+        .container div {
+          width: 100%;
+        }
+    }
+  </style>
+  ```
